@@ -289,7 +289,7 @@ def calculate_potential(fasta,strand,outfile):
 	'''
 		set directories and check depending tools existance
 	'''
-	script_dir,filename = os.path.split(os.path.abspath(sys.argv[0]))
+	script_dir,filename = os.path.split(os.path.realpath(sys.argv[0]))
 	data_dir = script_dir + "/../data/"
 	lib_dir = script_dir + "/../libs/"
 	app_svm_scale = lib_dir + "libsvm/libsvm-3.18/svm-scale"
